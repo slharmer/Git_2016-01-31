@@ -11,7 +11,7 @@ q <- ggplot(tom, aes(int1, int2))
 q + geom_point()
 
 tom.noNA <- na.omit(tom)
-q.noNA <- ggplot(tom.noNA, aes(hyp, int1))
+q.noNA <- ggplot(tom.noNA, aes(intlength, hyp))
 q.noNA + geom_point()
 q.noNA + geom_violin()
 head(tom)
